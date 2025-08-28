@@ -154,3 +154,50 @@ img{max-width:100%; display:block}
   .list li{margin:9px 0}
   .chips{gap:10px}
 }
+
+
+/* ===== Fix de alinhamentos / ritmos ===== */
+
+/* Navbar: links centralizados na altura da barra */
+.nav__inner{gap:16px}
+.nav__links a{display:inline-flex; align-items:center; height:38px}
+
+/* Hero: centraliza o orb e equaliza verticalmente com o texto */
+.hero .container{align-items:center}
+.hero__visual{display:grid; place-items:center}
+.hero__copy p{margin-top:8px}
+
+/* Sobre: cards com mesma altura e bom respiro */
+.about__grid{align-items:stretch}
+.about__grid .card{height:100%}
+#sobre .card p{margin-bottom:24px}
+
+/* Headers dos cards: título e badge na mesma linha/alinhados */
+.card__header{
+  display:flex; align-items:center; justify-content:space-between; gap:12px
+}
+.card__header h3{margin:0; line-height:1.3}
+.card__header .tag{margin-left:auto}
+
+/* Projetos: meta sempre “gruda” no rodapé do card e pills bem alinhadas */
+.projects .card.project{display:flex; flex-direction:column}
+.project p{margin:6px 0 0}
+.project .project__meta{
+  margin-top:auto; display:flex; flex-wrap:wrap; gap:10px
+}
+.pill{display:inline-flex; align-items:center}
+
+/* Timeline e listas mais estáveis */
+.timeline li{align-items:center}
+.timeline li div{line-height:1.6}
+.list li{line-height:1.7}
+
+/* Contato: ícones e textos alinhados */
+.contact__list li{display:flex; align-items:center; gap:10px}
+.contact__list .icon{flex:0 0 28px}
+
+/* Títulos com altura de linha consistente */
+.section__title{line-height:1.2}
+
+/* Utilitário que faltava (usado em <small class="muted">) */
+.muted{color:var(--muted)}

@@ -201,3 +201,13 @@ img{max-width:100%; display:block}
 
 /* Utilitário que faltava (usado em <small class="muted">) */
 .muted{color:var(--muted)}
+
+/* ==== FIX: desalinhamento dos cards na grade ==== */
+/* Remove o empurrão global do 2º card em grades */
+.card + .card { margin-top: 0; }
+
+/* Mantém o espaçamento vertical apenas em pilhas do tipo .cards (timeline, etc.) */
+.cards .card + .card { margin-top: 22px; }
+
+/* Garante alinhamento no grid do Sobre */
+.about__grid .card { margin-top: 0; }

@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto PIM</title>
+     <meta name="description" content="Portfólio de Luís Henrique Nascimento Belotti — estudante e desenvolvedor de sistemas (C, C++, C#, Java, HTML, CSS, Blazor, MSSQL e MySQL)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Page/CSS/estilo-page-home.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>⚡</text></svg>">
 </head>
 <body>
-    
+     <!-- Navbar -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#home" data-link>
+          <span class="brand__logo">LH</span>
+          <span class="brand__text">Luís Henrique — Projeto PIM</span>
+        </a>
+
+        <nav class="nav__links" id="navLinks" aria-label="Primária">
+          <a href="#home" data-link>Home</a>
+          <a href="#sobre" data-link>Sobre</a>
+          <a href="#experiencias" data-link>Projeto</a>
+          <a href="#projetos" data-link>Imagens</a>
+          <a href="#contato" data-link>Repositorio</a>
+        </nav>
+
+        <button id="menuBtn" class="nav__menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 </body>
 </html>

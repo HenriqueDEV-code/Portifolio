@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Imovel</title>
+     <meta name="description" content="Portfólio de Luís Henrique Nascimento Belotti — estudante e desenvolvedor de sistemas (C, C++, C#, Java, HTML, CSS, Blazor, MSSQL e MySQL)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Page/CSS/estilo-page-home.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>⚡</text></svg>">
 </head>
 <body>
-    
+     <!-- Navbar -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#home" data-link>
+          <span class="brand__logo">LH</span>
+          <span class="brand__text">Luís Henrique — Projeto Imovel</span>
+        </a>
+
+        <nav class="nav__links" id="navLinks" aria-label="Primária">
+          <a href="#home" data-link>Home</a>
+          <a href="#sobre" data-link>Sobre</a>
+          <a href="#experiencias" data-link>Projeto</a>
+          <a href="#projetos" data-link>Imagens</a>
+          <a href="#contato" data-link>Repositorio</a>
+        </nav>
+
+        <button id="menuBtn" class="nav__menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero / Home -->
+    <section id="home" class="section hero">
+      <div class="container grid-2">
+        <div class="hero__copy" data-reveal>
+          <h1 class="gradient-text">Sistema de Gestão de Imóveis (CaptaWeb)</h1>
+          <p>
+            Olá! Este é o meu projeto <strong>Sistema de Captação de Imóveis (CaptaWeb)</strong>. Criei um esboço inicial do sistema e estou desenvolvendo uma nova versão, aprimorando-o continuamente.
+            Para o desenvolvimento utilizei <strong>C#</strong> como backend e <strong>Windows Forms</strong> como frontend. O banco de dados utilizado foi o <strong>MSSQL</strong> e implementei integração com API de consulta de CEP para facilitar o cadastro de endereços.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projeto" data-link>Ver Projeto</a>
+            <a class="btn btn--ghost" href="#repositorio" data-link>Repositório</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-reveal>
+          <div class="orb">
+            <div class="orb__core"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <script src="./Page/js/script-page-home.js" defer></script>
 </body>
 </html>
